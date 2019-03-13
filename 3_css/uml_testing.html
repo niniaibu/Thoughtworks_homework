@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta http-equiv="Content-Type" content="on" charset="utf-8" />
+  <meta name="nini" content="first write HTML">
+  <style type="text/css">
+  body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'STSong';
+  }
+  div#all{
+    text-align: left;
+    font-size:12.5px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    border: 1px #f2f3f3;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  table{
+    padding: 10px;
+    margin-bottom: 1em;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    border-collapse:collapse;
+  }
+  td{
+    padding: 1em;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  td.left{
+    border-left:1px solid #e5e5e5;
+    border-right-style:none;
+  }
+  td.right{
+    border-right:1px solid #e5e5e5;
+    border-left-style:none;
+  }
+  div.main_text{
+    border: 1px solid #f2f3f3;
+    margin-bottom: 1em;
+  }
+  ol{margin-block-start: 0.5em;
+    margin-block-end: 0.5em;}
+  li{
+    margin-left: 25px;
+    padding: 10px;
+  }
+  input.option{
+    margin-bottom: 1em;
+  }
+  input.fill{
+    margin-top: 5px;
+    margin-right: 10px;
+    weight:20em;
+    height: 25px;
+    font-family: "STSong";
+  }
+  input.fill_answer{
+    height: 25px;
+    font-family: "STSong";
+  }
+  span.green{
+    color: green;
+    font-weight: bold;
+  }
+  span.red{
+    color: red;
+    font-weight: 1500;
+  }
+  textarea{
+    margin: 12px 0px 0px;
+    width: 90%;
+    height: 100px;
+  }
+  div.submit{
+    text-align: center;
+  }
+  input.submit1{
+    background-color: rgb(102, 223, 235);
+    vertical-align: middle;
+    margin-bottom: 0.5em;
+  }
+
+  }
+  </style>
+</head>
+
+<body>
+  <div id="all">
+    <div id=header>
+      <h2>统一建模语言理论测试</h2>
+    </div>
+    <div>
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="left">考试科目：统一建模语言</td>
+          <td class="middle">时间：100分钟</td>
+          <td class="right">得分：</td>
+        </tr>
+        <tr><td class="null_tb"></td><td class="null_tb"></td><td class="null_tb"></td>
+        </tr>
+        <tr>
+          <td class="left">班级：<input type="text" class="fill_answer">
+          </td>
+          <td class="middle">学号：<input type="text" class="fill_answer">
+          </td>
+          <td class="right">姓名：<input type="text" class="fill_answer">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="main_text">
+      <h3>一、填空题（每空5分，共20分）</h3>
+      <ol>
+        <li>UML的中文全称是：
+          <br/><input type="text" class="fill"></li>
+        <li>对象最突出的特征是：
+          <br/><input type="text" class="fill">
+          <input type="text" class="fill">
+          <input type="text" class="fill">
+        </li>
+      </ol>
+    </div>
+    <div class="main_text">
+      <h3> 二、选择题（每题10分，共20分）</h3>
+      <ol>
+        <li>UML与软件工程的关系是：
+          <form>
+            <br/>
+            <input type="radio" name="relation" class="option">&nbsp;(A) UML就是软件工程<br/>
+            <input type="radio" name="relation" class="option">&nbsp;(B) UML参与到软件工程中软甲开发过程的几个阶段"<br/>
+            <input type="radio" name="relation" class="option">&nbsp;(C) UML与软甲工程无关"<br/>
+            <input type="radio" name="relation" class="option">&nbsp;(D) UML是软件工程的一部分"<br/>
+          </form>
+        </li>
+        <li>Java语言支持：
+          <form>
+            <br/>
+            <input type="radio" name="relation1" class="option">&nbsp;(A) 单继承<br/>
+            <input type="radio" name="relation1" class="option">&nbsp;(B) 多继承<br/>
+            <input type="radio" name="relation1" class="option">&nbsp;(C) 单继承和多继承都支持<br/>
+            <input type="radio" name="relation1" class="option">&nbsp;(D) 单继承和多继承都不支持<br/>
+          </form>
+        </li>
+      </ol>
+    </div>
+    <div class="main_text">
+      <h3>三、多选题（每题10分，共20分）</h3>
+      <ol>
+        <li>用例的粒度分为以下哪三种：
+          <form>
+            <br/>
+            <input type="checkbox" name="mutiple" class="option">&nbsp;(A) 概述级<br/>
+            <input type="checkbox" name="mutiple" class="option">&nbsp;(B) 需求级<br/>
+            <input type="checkbox" name="mutiple" class="option">&nbsp;(C) 用户目标级<br/>
+            <input type="checkbox" name="mutiple" class="option">&nbsp;(D) 子功能级<br/>
+          </form>
+        </li>
+        <li>类图由以下哪三部分组成：
+          <p></p>
+            <br/>
+            <input type="checkbox" name="mutiple1" class="option">&nbsp;(A) 名称(Name)<br/>
+            <input type="checkbox" name="mutiple1" class="option">&nbsp;(B) 属性(Attribute)<br/>
+            <input type="checkbox" name="mutiple1" class="option">&nbsp;(C) 操作(Operation)<br/>
+            <input type="checkbox" name="mutiple1" class="option">&nbsp;(D) 方法(Function)<br/>
+        </li>
+      </ol>
+    </div>
+    <div class="main_text">
+      <h3>四、判断题（每题10分，共20分）</h3>
+      <ol>
+        <li>用例图只是用于和客户交流和沟通的，用于确定需求。
+          <input type="radio" name="radio">&nbsp;<span class="green">√</span>
+          <input type="radio" name="radio"><span class="red">×</span>
+        </li>
+        <li>在状态图中，终止状态在一个状态途中允许有任意多个。
+          <input type="radio" name="radio1" style="font-family:">&nbsp;<span class="green">√</span>
+          <input type="radio" name="radio1"><span class="red">×</span>
+        </li>
+      </ol>
+    </div>
+    <div class="main_text">
+      <h3>五、简答题（每题20分，共20分）</h3>
+      <ol>
+        <li>简述什么是模型以及模型的表现形式？
+          <p></p><textarea name="message"></textarea>
+        </li>
+      </ol>
+      <form>
+        <div class="submit"><input type="submit" value="计算分数" class="submit1"></div>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
